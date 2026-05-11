@@ -9,7 +9,7 @@ export async function POST(req: Request) {
 
   if (!paymentId) return NextResponse.json({ received: true });
 
-  const mpRes = await fetch(https://api.mercadopago.com/v1/payments/, {
+  const mpRes = await fetch("https://api.mercadopago.com/v1/payments/", {
     headers: {
       Authorization: Bearer 
     }

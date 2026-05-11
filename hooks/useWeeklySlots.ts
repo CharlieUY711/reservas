@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from 'react';
 
 export function useWeeklySlots(agendaId: string | null, currentDate: Date) {
@@ -12,7 +13,7 @@ export function useWeeklySlots(agendaId: string | null, currentDate: Date) {
         date: currentDate.toISOString(),
       });
 
-      const res = await fetch(/api/slots?);
+      const res = await fetch("/api/slots");
       const data = await res.json();
       setSlots(data);
     };
