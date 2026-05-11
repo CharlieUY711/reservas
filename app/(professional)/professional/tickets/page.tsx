@@ -1,3 +1,5 @@
+"use client";
+
 import DashboardHeader from '@/components/DashboardHeader';
 import TicketsList from '@/components/TicketsList';
 
