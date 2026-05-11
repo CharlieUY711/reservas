@@ -1,13 +1,18 @@
 "use client";
-import { useEffect, useState } from 'react';
-import { getAgendaId } from '@/lib/getAgenda';
+
+import { useEffect, useState } from "react";
+import { getAgenda } from "@/lib/getAgenda";
 
 export function useAgenda() {
-  const [agendaId, setAgendaId] = useState<string | null>(null);
+  const [agenda, setAgenda] = useState(null);
 
   useEffect(() => {
-    getAgendaId().then(setAgendaId).catch(console.error);
+    async function load() {
+      const data = await getAgenda();
+      setAgenda(data);
+    }
+    load();
   }, []);
 
-  return agendaId;
+  return { agenda };
 }
