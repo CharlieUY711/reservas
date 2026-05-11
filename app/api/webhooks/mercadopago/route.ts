@@ -11,7 +11,7 @@ export async function POST(req: Request) {
 
   const mpRes = await fetch("https://api.mercadopago.com/v1/payments/", {
     headers: {
-      Authorization: Bearer 
+      Authorization: "Bearer TU_TOKEN_AQUI"
     }
   });
 
