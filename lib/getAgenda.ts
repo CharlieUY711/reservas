@@ -1,3 +1,4 @@
+"use client";
 import { supabase } from './supabaseClient';
 
 export async function getAgendaId() {
@@ -16,3 +17,4 @@ export async function getAgendaId() {
 
   return data.id;
 }
+

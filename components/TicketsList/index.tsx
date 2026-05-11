@@ -1,3 +1,4 @@
+"use client";
 import { useTickets } from '@/hooks/useTickets';
 
 export default function TicketsList() {
@@ -34,3 +35,4 @@ export default function TicketsList() {
     </div>
   );
 }
+

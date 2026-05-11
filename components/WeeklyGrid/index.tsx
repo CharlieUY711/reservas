@@ -1,3 +1,4 @@
+"use client";
 'use client';
 
 import { useAgenda } from '@/hooks/useAgenda';
@@ -28,3 +29,4 @@ export default function WeeklyGrid() {
     </div>
   );
 }
+
